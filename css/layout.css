@@ -1,0 +1,354 @@
+body{
+    font-family: '4804_kwangmd_puklukregular', Arial, sans-serif;
+    font-size: 21px;
+}
+.errorSummary{
+    background: #FFE8E8;
+    border: 1px solid #F30000;
+    color: #D50000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.errorSummary p{
+    margin: 5px 0;
+}
+.errorSummary ul{
+    margin: 0;
+}
+
+/*--------------------------------------------*/
+/* Header */
+/*--------------------------------------------*/
+#top_bar{
+    height: 33px;
+    background: #d2d2d2;
+}
+#top_bar .wrap{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 350; 
+}
+ul.language-menu{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 180px;
+    font-weight: bold;
+    color: #464646;
+}
+ul.language-menu li {
+    float: left;
+    margin-left: 10px;
+}
+
+#header{
+    width: 100%;
+    height: 93px;
+    background: #FFF;
+    border-bottom: solid 2px #f5bf00;
+}
+.header{
+    width: 1000px;
+    height: 34px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 600;
+}
+.logo{
+    position: absolute;
+    width: 198px;
+    top: 0px;
+    left: 0;
+}
+#gnb_wrap{
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 34px;
+    z-index: 500;
+}
+#gnb{
+    width: 802px;
+    padding-left: 198px;
+    height: 93px;
+    margin: 0 auto;
+    position: relative;
+    //background: url(../images/mainmenu_bg.jpg) no-repeat 0 0;
+}
+#gnb{
+    list-style: none;
+    font-size: 25px;
+}
+#gnb li.sub1, #gnb li.sub2, #gnb li.sub3, #gnb li.sub4, #gnb li.sub5, #gnb li.sub6, #gnb li.sub7, #gnb li.sub8 {
+    float: left;
+    padding: 35px 5px 0px 10px;
+}
+#gnb > li::after{
+    content: '|';
+}
+#gnb > li:last-child::after{
+    content: none;
+}
+#gnb li a{
+    text-decoration: none;
+    color: #464646;
+    padding-right: 10px;
+}
+#gnb li a:hover{
+    color: #C00;
+}
+#gnb li ul{
+    position: absolute;
+    display: none;
+}
+#gnb li ul.type_b {
+    border-top: 1px solid #f5be00;
+    border-left: 1px solid #f5be00;
+    border-right: 1px solid #f5be00;
+    border-bottom: 1px solid #f5be00;
+    background: #FFF;
+    padding: 10px;
+    list-style: none;
+}
+#gnb li ul#sub2{
+    left: 280px;
+    top: 75px;
+}
+#gnb li ul#sub3{
+    left: 415px;
+    top: 75px;
+}
+#gnb li ul#sub5{
+    left: 720px;
+    top: 75px;
+}
+#gnb li ul#sub6{
+    left: 815px;
+    top: 75px;
+}
+#gnb li ul.type_b li:hover{
+    background: #f5bf00;
+}
+#gnb li ul.type_b li:hover a{
+    color: #FFF;
+}
+#gnb li ul.type_b li a{
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/*--------------------------------------------*/
+/* Body */
+/*--------------------------------------------*/
+#main_body{
+    background: #e7e7e7;
+    padding-top: 10px;
+}
+#body_wrap_line{
+    position: absolute;
+    left: 0px;
+    top: 128px;
+    z-index: 0;
+    width: 100%;
+    background: transparent center;
+    height: 168px;
+}
+#body_wrap{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 170px;
+    z-index: 0;
+    border-left: solid 0px #ccc;
+    background-image: url(../images/con_line.gif);
+}
+#body_left{
+    margin: 0px;
+    padding: 0;
+    margin-top: 4px;
+    float: left;
+    width: 290px;
+}
+#sidebar {
+    position: relative;
+    width: 200px;
+    top: 50px;
+    height: 500px;
+}
+#sidebar > h2 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    border-bottom: 2px solid #757575;
+}
+#sidebar > h2 a{
+    color: #900;
+    text-decoration: none;
+}
+#sidebar ul{
+    margin: 10px 0 0 0;
+    padding: 0 0 44px 0;
+    min-height: 80px;
+    list-style: none;
+}
+#sidebar ul li{
+    padding: 5px 0;
+    border-bottom: 1px solid #CCC;
+}
+#sidebar ul li:last-child{
+    border: none;
+}
+#sidebar ul li a{
+    color: #534F4F;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 700;
+}
+#sidebar ul li a:hover{
+    color: #900;
+}
+#body_content{
+    float: left;
+    width: 660px;
+    min-height: 800px;
+}
+#clear_div{
+    clear: both;
+    height: 0px;
+}
+
+#location{
+    position: absolute;
+    text-align: right;
+    width: 660px;
+    padding: 10px 0;
+    top: 10px;
+    height: 15px;
+    font-size: 19px;
+    color: #757575;
+    background: #fff;
+    vertical-align: top;
+}
+#location a {
+    color: #848484;
+    vertical-align: top;
+    text-decoration: none;
+    font-weight: 500;
+}
+#location span.lohome {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 5px;
+    height: 14px;
+    vertical-align: top;
+    background: url(../images/lhome.gif) no-repeat 0 7px;
+    background-position: 0 9px;
+}
+
+#content_text {
+    position: relative;
+    width: 630px;
+    margin: auto;
+    margin-top: 54px;
+    margin-left: 30px;
+    color: #676767;
+    line-height: 160%;
+}
+#contentTitle{
+    position: relative;
+    width: 100%;
+}
+#contentTitle h2{
+    margin: 0;
+    font-size: 25px;
+}
+#contentTitle h2 span.subTitle{
+    font-size: 21px;
+    font-weight: 600;
+}
+#contentTitle h2 span.subTitle a{
+    text-decoration: none;
+}
+.contArea{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.contArea p{
+    line-height: 23px;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 10px 0;
+    //font-family: Arial, Helvetica, sans-serif;
+}
+.contArea p .titleArrow{
+    font-weight: bold;
+}
+.contArea p .titleDescription{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*--------------------------------------------*/
+/* Footer */
+/*--------------------------------------------*/
+#foot_wrap{ 
+    position: relative;
+    color: #aaa;
+    width: 100%;
+    height: 125px;
+    margin-top: 50px;
+    background: #262626;
+    border-top: solid 1px #c5cbd9;
+    font-size: 11px;
+    z-index: 1007;
+}
+#foot_wrap02{
+    position: relative;
+    color: #aaa;
+    width: 100%;
+    height: 125px;
+    background: #262626;
+    border-top: solid 0px #c5cbd9;
+    font-size: 14px;
+    z-index: 1007;
+    position: relative;
+}
+#footer_box{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100px;
+}
+.authorinfo{
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    width: 700px;
+    height: 48px;
+    font-size: 14px;
+    color: #C2C2C2;
+}
+.copyright{
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 65px;
+    width: 495px;
+    font-size: 10px;
+    font-family: Verdana,Tahoma;
+    height: 14px;
+    overflow: hidden;
+    color: #C2C2C2;
+}
+.foot_logo{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
