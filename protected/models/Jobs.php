@@ -12,7 +12,8 @@ class Jobs extends CActiveRecord {
             array('local_fname, local_lname, en_fname, en_lname', 'length', 'max' => 255),
             array('nationality', 'length', 'max' => 2),
             array('gender', 'length', 'max' => 6),
-            array('created_date', 'safe'),
+            array('created_date', 'default',
+                'value' => new CDbExpression('NOW()')),
             array('id, local_fname, local_lname, en_fname, en_lname, age, nationality, gender, interest_job1, interest_job2, interest_job3, education, education_branch, image, created_date', 'safe', 'on' => 'search'),
         );
     }
