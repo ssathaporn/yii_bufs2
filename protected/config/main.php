@@ -16,15 +16,14 @@ return array(
         'application.components.*',
     ),
     'modules' => array(
-    // uncomment the following to enable the Gii tool
-    
-      'gii'=>array(
-      'class'=>'system.gii.GiiModule',
-      'password'=>'123456',
-      // If removed, Gii defaults to localhost only. Edit carefully to taste.
-      'ipFilters'=>array('127.0.0.1','::1'),
-      ),
-     
+        // uncomment the following to enable the Gii tool
+
+        'gii' => array(
+            'class' => 'system.gii.GiiModule',
+            'password' => '123456',
+            // If removed, Gii defaults to localhost only. Edit carefully to taste.
+            'ipFilters' => array('127.0.0.1', '::1'),
+        ),
     ),
     // application components
     'components' => array(
@@ -45,17 +44,17 @@ return array(
          */
         'db' => array(
             'connectionString' => 'sqlite:' . dirname(__FILE__) . '/../data/testdrive.db',
+            'enableProfiling' => true,
+            'enableParamLogging' => true,
         ),
         // uncomment the following to use a MySQL database
-        
-          'db'=>array(
-          'connectionString' => 'mysql:host=localhost;dbname=yii_bufs',
-          'emulatePrepare' => true,
-          'username' => 'root',
-          'password' => '123456',
-          'charset' => 'utf8',
-          ),
-         
+        'db' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=yii_bufs',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '123456',
+            'charset' => 'utf8',
+        ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
@@ -65,8 +64,15 @@ return array(
             'routes' => array(
                 array(
                     'class' => 'CFileLogRoute',
-                    'levels' => 'error, warning',
+                    'levels' => 'error, warning, info',
                 ),
+                /*
+                array(
+                    'class' => 'CWebLogRoute',
+                    'levels' => 'trace',
+                    'categories' => 'system.db.CDbCommand',
+                    'enabled' => YII_DEBUG,
+                ), */
             // uncomment the following to show log messages on web pages
             /*
               array(

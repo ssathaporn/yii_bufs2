@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/yii_bufs2/protected/config/main.php</file>
+            <file>file:/C:/xampp/htdocs/yii_bufs2/framework/db/schema/CDbCriteria.php</file>
+            <file>file:/C:/xampp/htdocs/yii_bufs2/protected/views/job/index.php</file>
             <file>file:/C:/xampp/htdocs/yii_bufs2/protected/controllers/JobController.php</file>
-            <file>file:/C:/xampp/htdocs/yii_bufs2/protected/models/Jobs.php</file>
-            <file>file:/C:/xampp/htdocs/yii_bufs2/protected/models/JobsPosition.php</file>
         </group>
     </open-files>
 </project-private>

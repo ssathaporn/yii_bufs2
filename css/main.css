@@ -269,6 +269,33 @@ ul.courseList{
     color: #FFF;
 }
 
+.jobResult-wrap{
+    padding: 15px;
+    overflow: hidden;
+    border-bottom: 2px dashed #CCC;
+}
+.jobResult-wrap .jobResult-image{
+    float: left;
+    width: 140px;
+    margin-right: 10px;
+}
+.jobResult-wrap .jobResult-image img{
+    width: 100%;
+}
+.jobResult-wrap .jobResult-description{
+    float: left;
+    width: 480px;
+}
+.jobResult-wrap .jobResult-description .title-position{
+    color: #0034FF;
+    font-weight: 700;
+}
+.jobResult-wrap .jobResult-description ul{
+    margin: 0;
+    float: left;
+    width: 190px;
+}
+
 /*-----------------------------------------*/
 /* Mypage */
 /*-----------------------------------------*/

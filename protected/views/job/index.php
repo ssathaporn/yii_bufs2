@@ -18,7 +18,7 @@
             <p class="jobForm-searchHeader">ค้นหา</p>
             <div id="jobSearchBox">
                 <?php
-                echo CHtml::beginForm('', 'post', array(
+                echo CHtml::beginForm('', 'get', array(
                     'id' => 'frm_search'
                 ));
                 ?>
@@ -32,29 +32,29 @@
 
                 <dl>
                     <dt><?php echo CHtml::activeLabel($model, 'sl_nationality'); ?></dt>
-                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_nationality', array('' => 'สัญชาติทั้งหมด', 'th' => 'ไทย', 'ke' => 'เกาหลี')); ?></dd>
+                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_nationality', CHtml::listData($nationality, 'id', 'nation_th_name'), array('empty' => 'สัญชาติทั้งหมด')); ?></dd>
                 </dl>  
 
                 <dl>
-                    <dt><?php echo CHtml::activeLabel($model, 'sl_education'); ?></dt>
-                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_education', CHtml::listData($education, 'id', 'education_th_name'), array('empty' => 'ระดับการศึกษาทั้งหมด')); ?></dd>
+                    <dt><?php echo CHtml::activeLabel($model, 'sl_degree'); ?></dt>
+                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_degree', CHtml::listData($degree, 'id', 'degree_th_name'), array('empty' => 'ระดับการศึกษาทั้งหมด')); ?></dd>
                 </dl>               
 
                 <dl>
                     <dt class="dt_age"><?php echo CHtml::activeLabel($model, 'sl_age'); ?></dt>
-                    <dd class="dd_age"><?php echo CHtml::activeDropDownList($model, 'sl_age', array('' => 'ไม่จำกัด', '18-25' => '18-25', '26-30' => '26-30', '31-35' => '31-35')); ?></dd>
+                    <dd class="dd_age"><?php echo CHtml::activeDropDownList($model, 'sl_age', array('' => 'ไม่จำกัด', '1' => '18-25', '2' => '26-30', '3' => '31-35', '4' => 'มากกว่า 35 ปี')); ?></dd>
                     <dt class="dt_gender"><?php echo CHtml::activeLabel($model, 'sl_gender'); ?></dt>
                     <dd class="dd_gender"><?php echo CHtml::activeDropDownList($model, 'sl_gender', array('' => 'ทุกเพศ', 'male' => 'ผู้ชาย', 'female' => 'ผู้หญิง')); ?></dd>
                 </dl>                  
 
                 <dl>
-                    <dt><?php echo CHtml::activeLabel($model, 'sl_branch'); ?></dt>
-                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_branch', CHtml::listData($branchs, 'id', 'branch_th_name'), array('empty' => 'สาขาวิชาทั้งหมด')); ?></dd>
+                    <dt><?php echo CHtml::activeLabel($model, 'sl_category'); ?></dt>
+                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_category', CHtml::listData($category, 'id', 'category_th_name'), array('empty' => 'สาขาวิชาทั้งหมด')); ?></dd>
                 </dl>               
 
                 <dl>
                     <dt><?php echo CHtml::activeLabel($model, 'sl_language'); ?></dt>
-                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_language', array('' => 'ไม่ระบุ', 'th' => 'ภาษาไทย', 'kr' => 'ภาษาเกาหลี')); ?></dd>
+                    <dd><?php echo CHtml::activeDropDownList($model, 'sl_language', CHtml::listData($language, 'id', 'language_th_name'), array('empty' => 'ไม่ระบุ')); ?></dd>
                 </dl>
 
                 <?php echo CHtml::submitButton('ค้นหา', array('class' => 'submit')); ?>        
@@ -62,6 +62,41 @@
             </div>
         </div>
 
-        <img src="<?php echo Yii::app()->baseUrl . '/images/job/job_img2.png' ?>">
+        <?php foreach ($results as $result): ?>
+            <div class="jobResult-wrap">
+                <div class="jobResult-image">
+                    <?php if ($result->gender == 'male'): ?>
+                        <img src="<?php echo Yii::app()->request->baseUrl . "/images/blank_male.jpg" ?>">
+                    <?php else : ?>
+                        <img src="<?php echo Yii::app()->request->baseUrl . "/images/blank_female.jpg" ?>">
+                    <?php endif; ?>
+                </div>
+                <div class="jobResult-description">
+                    <p class="title-position">
+                        ตำแหน่งงานที่สนใจ : <?php echo $result->interest1->position_th_name . ", " . $result->interest2->position_th_name . ", " . $result->interest3->position_th_name ?>
+                    </p>
+                    <div class=''>
+                        <ul>
+                            <li>สัญชาติ : <?php echo Jobs::getThaiNation($result->nationality); ?></li>
+                            <li>อายุ : <?php echo $result->age . " ปี" ?></li>
+                        </ul>
+                        <ul>
+                            <li>วุฒิการศึกษา : <?php echo $result->education1->education_th_name ?></li>
+                            <li>สาขา : <?php echo $result->branch1->branch_th_name ?></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+
+        <div class='pagi'>
+            <?php
+            $this->widget('CLinkPager', array(
+                'pages' => $pages,
+                'header' => false,
+                'cssFile' => Yii::app()->request->baseUrl . "/css/main.css",
+            ));
+            ?>
+        </div>
     </div>
 </div>

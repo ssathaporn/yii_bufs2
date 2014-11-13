@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50527
 File Encoding         : 65001
 
-Date: 2014-11-07 16:43:46
+Date: 2014-11-13 17:09:50
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -63,13 +63,15 @@ CREATE TABLE `jobs` (
   `en_fname` varchar(255) DEFAULT NULL,
   `en_lname` varchar(255) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
-  `nationality` enum('th','kr') DEFAULT NULL,
   `gender` enum('male','female') DEFAULT NULL,
-  `interest_job1` int(11) DEFAULT NULL,
-  `interest_job2` int(11) DEFAULT NULL,
-  `interest_job3` int(11) DEFAULT NULL,
+  `nationality` int(11) DEFAULT NULL,
+  `interest_position1` varchar(255) DEFAULT NULL,
+  `interest_position2` varchar(255) DEFAULT NULL,
+  `interest_position3` varchar(255) DEFAULT NULL,
   `education` int(11) DEFAULT NULL,
-  `education_branch` int(11) DEFAULT NULL,
+  `education_category` int(11) DEFAULT NULL,
+  `language1` int(11) DEFAULT NULL,
+  `language2` int(11) DEFAULT NULL,
   `image` int(11) DEFAULT NULL,
   `created_date` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -80,43 +82,85 @@ CREATE TABLE `jobs` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `jobs_branch`
+-- Table structure for `jobs_education_category`
 -- ----------------------------
-DROP TABLE IF EXISTS `jobs_branch`;
-CREATE TABLE `jobs_branch` (
+DROP TABLE IF EXISTS `jobs_education_category`;
+CREATE TABLE `jobs_education_category` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `branch_en_name` varchar(255) DEFAULT NULL,
-  `branch_th_name` varchar(255) DEFAULT NULL,
-  `branch_kr_name` varchar(255) DEFAULT NULL,
+  `category_en_name` varchar(255) DEFAULT NULL,
+  `category_th_name` varchar(255) DEFAULT NULL,
+  `category_kr_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of jobs_education_category
+-- ----------------------------
+INSERT INTO `jobs_education_category` VALUES ('1', 'Management/Human Resource', 'การบริหาร/การจัดการ/บุคคล', null);
+INSERT INTO `jobs_education_category` VALUES ('2', 'Marketing/Sale', 'การตลาด/การขาย', null);
+INSERT INTO `jobs_education_category` VALUES ('3', 'Hotel/Tourism', 'การโรงแรม/ท่องเที่ยว', null);
+INSERT INTO `jobs_education_category` VALUES ('4', 'Legal', 'กฎหมาย', null);
+INSERT INTO `jobs_education_category` VALUES ('5', 'Education/Teaching', 'ครุศาสตร์/ศึกษาศาสตร์', null);
+INSERT INTO `jobs_education_category` VALUES ('6', 'Accounting/Banking/Finance', 'บัญชี/การเงิน/การธนาคาร', null);
+INSERT INTO `jobs_education_category` VALUES ('7', 'Programmer/Computer Sciences/IT', 'โปรแกรมเมอร์/วิทยาศาสตร์คอมพิวเตอร์/IT', null);
+INSERT INTO `jobs_education_category` VALUES ('8', 'Economics', 'เศรษฐศาสตร์', null);
+
+-- ----------------------------
+-- Table structure for `jobs_education_degree`
+-- ----------------------------
+DROP TABLE IF EXISTS `jobs_education_degree`;
+CREATE TABLE `jobs_education_degree` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `degree_en_name` varchar(255) DEFAULT NULL,
+  `degree_th_name` varchar(255) DEFAULT NULL,
+  `degree_kr_name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of jobs_branch
+-- Records of jobs_education_degree
 -- ----------------------------
-INSERT INTO `jobs_branch` VALUES ('1', 'Management', 'การจัดการ', null);
-INSERT INTO `jobs_branch` VALUES ('2', 'Business Administration', 'บริหารธุรกิจ', null);
-INSERT INTO `jobs_branch` VALUES ('3', 'Accounting', 'การบัญชี', null);
-INSERT INTO `jobs_branch` VALUES ('4', 'Tourism', 'การท่องเที่ยว', null);
+INSERT INTO `jobs_education_degree` VALUES ('1', 'High School / Vocational School', 'ต่ำกว่าปริญญาตรี', null);
+INSERT INTO `jobs_education_degree` VALUES ('2', 'Bachelor\'s Degree', 'ปริญญาตรี', null);
+INSERT INTO `jobs_education_degree` VALUES ('3', 'Master\'s Degree', 'ปริญญาโท', null);
+INSERT INTO `jobs_education_degree` VALUES ('4', 'Doctorate', 'ปริญญาเอก', null);
 
 -- ----------------------------
--- Table structure for `jobs_education`
+-- Table structure for `jobs_language`
 -- ----------------------------
-DROP TABLE IF EXISTS `jobs_education`;
-CREATE TABLE `jobs_education` (
+DROP TABLE IF EXISTS `jobs_language`;
+CREATE TABLE `jobs_language` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `education_en_name` varchar(255) DEFAULT NULL,
-  `education_th_name` varchar(255) DEFAULT NULL,
-  `education_kr_name` varchar(255) DEFAULT NULL,
+  `language_en_name` varchar(255) DEFAULT NULL,
+  `language_th_name` varchar(255) DEFAULT NULL,
+  `language_kr_name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of jobs_education
+-- Records of jobs_language
 -- ----------------------------
-INSERT INTO `jobs_education` VALUES ('1', 'Master\'s Degree or Higher', 'ต่ำกว่าปริญญาตรี', null);
-INSERT INTO `jobs_education` VALUES ('2', 'Bachelor\'s Degree', 'ปริญญาตรี', null);
-INSERT INTO `jobs_education` VALUES ('3', 'High School / Vocational School', 'สูงกว่าปริญญาตรี', null);
+INSERT INTO `jobs_language` VALUES ('1', 'English', 'ภาษาอังกฤษ', null);
+INSERT INTO `jobs_language` VALUES ('2', 'Thai', 'ภาษาไทย', null);
+INSERT INTO `jobs_language` VALUES ('3', 'Korea', 'ภาษาเกาหลี', null);
+
+-- ----------------------------
+-- Table structure for `jobs_nationality`
+-- ----------------------------
+DROP TABLE IF EXISTS `jobs_nationality`;
+CREATE TABLE `jobs_nationality` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nation_en_name` varchar(255) DEFAULT NULL,
+  `nation_th_name` varchar(255) DEFAULT NULL,
+  `nation_kr_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of jobs_nationality
+-- ----------------------------
+INSERT INTO `jobs_nationality` VALUES ('1', 'Thai', 'ไทย', null);
+INSERT INTO `jobs_nationality` VALUES ('2', 'Korean', 'เกาหลี', null);
 
 -- ----------------------------
 -- Table structure for `jobs_position`
@@ -128,18 +172,20 @@ CREATE TABLE `jobs_position` (
   `position_th_name` varchar(255) DEFAULT NULL,
   `position_kr_name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of jobs_position
 -- ----------------------------
-INSERT INTO `jobs_position` VALUES ('1', 'Marketting', 'การตลาด', null);
-INSERT INTO `jobs_position` VALUES ('2', 'Guide', 'มัคคุเทศก์', null);
-INSERT INTO `jobs_position` VALUES ('3', 'Accouting', 'การเงิน', null);
-INSERT INTO `jobs_position` VALUES ('4', 'IT', 'ไอที', null);
-INSERT INTO `jobs_position` VALUES ('5', 'Sales', 'งานขาย', null);
-INSERT INTO `jobs_position` VALUES ('6', 'Law', 'กฏหมาย', null);
-INSERT INTO `jobs_position` VALUES ('7', 'Translator', 'ล่าม', null);
+INSERT INTO `jobs_position` VALUES ('1', 'Legal', 'กฎหมาย', null);
+INSERT INTO `jobs_position` VALUES ('2', 'Marketing', 'การตลาด', null);
+INSERT INTO `jobs_position` VALUES ('3', 'Sales', 'การขาย', null);
+INSERT INTO `jobs_position` VALUES ('4', 'Computer/IT/Programmer', 'คอมพิวเตอร์/IT/โปรแกรมเมอร์', null);
+INSERT INTO `jobs_position` VALUES ('5', 'Musician/Actor/Singer', 'งานบันเทิง/นักแสดง/นางแบบ/นักร้อง/Stylist/Costume', null);
+INSERT INTO `jobs_position` VALUES ('6', 'Finance/Accounting', 'บัญชี/การเงิน', null);
+INSERT INTO `jobs_position` VALUES ('7', 'Training/HR/Recruiting', 'บุคคล/ฝึกอบรม', null);
+INSERT INTO `jobs_position` VALUES ('8', 'Interpreter/Tourist Guide/Reservation', 'ล่าม/มัคคุเทศก์/จองห้อง/จองตั๋ว', null);
+INSERT INTO `jobs_position` VALUES ('9', 'Education/Teachers', 'อาจารย์/ครู/งานวิชาการ', null);
 
 -- ----------------------------
 -- Table structure for `users`

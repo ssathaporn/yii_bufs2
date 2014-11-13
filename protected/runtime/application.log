@@ -1716,3 +1716,835 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii_bufs2/index.php?r=%E0%B9%80%E0%B8%A3%E0%B8%A3
 ---
+2014/11/10 07:58:31 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php:66)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(34): JobController->render()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (66)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (34)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/10 10:21:42 [error] [php] Non-static method Jobs::getThaiNation() should not be called statically, assuming $this from incompatible context (C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php:79)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/10 10:24:34 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+2014/11/10 10:26:00 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+2014/11/10 10:26:54 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+2014/11/10 10:27:23 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+2014/11/10 10:27:43 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+2014/11/10 10:28:17 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+2014/11/10 10:28:33 [error] [php] Undefined variable: n (C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php:79)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/10 10:28:55 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(33): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (33)
+2014/11/10 10:29:20 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(34): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (84)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (34)
+2014/11/10 10:29:40 [error] [php] Undefined index: $n (C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php:86)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): JobController->renderInternal()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#3 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(32): JobController->render()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\models\Jobs.php (86)
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (79)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (32)
+2014/11/10 10:31:55 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php:83)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(32): JobController->render()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (83)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (32)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/10 10:32:25 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php:83)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): JobController->renderFile()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): JobController->renderPartial()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(32): JobController->render()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job/index
+in C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php (83)
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (32)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/12 09:48:57 [error] [php] Undefined index: sl_position (C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (14)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/12 10:25:14 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "getText".' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(48): CComponent->__call('getText', Array)
+#1 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(48): CDbCriteria->getText()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#8 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/12 10:26:51 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "getText".' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(48): CComponent->__call('getText', Array)
+#1 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(48): CDbCriteria->getText()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#8 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:09:49 [error] [php] Undefined index: sl_age (C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=1&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (31)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:10:12 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position)) AND ((nationality = :sl_nationality))) AND ((nationality = :sl_education))) AND ((gender = :sl_gender))) AND ((education_branch = :sl_branch)).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:10:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position)) AND ((nationality = :sl_nationality))) AND ((nationality = :sl_education))) AND ((gender = :sl_gender))) AND ((education_branch = :sl_branch))' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=1&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 05:11:00 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position)) AND ((nationality = :sl_nationality))) AND ((nationality = :sl_education))) AND ((gender = :sl_gender))) AND ((education_branch = :sl_branch)).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:11:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position)) AND ((nationality = :sl_nationality))) AND ((nationality = :sl_education))) AND ((gender = :sl_gender))) AND ((education_branch = :sl_branch))' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=1&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:11:09 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position)) AND ((nationality = :sl_nationality))) AND ((nationality = :sl_education))) AND ((gender = :sl_gender))) AND ((education_branch = :sl_branch)).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:11:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position)) AND ((nationality = :sl_nationality))) AND ((nationality = :sl_education))) AND ((gender = :sl_gender))) AND ((education_branch = :sl_branch))' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:13:15 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:13:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:14:13 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:14:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:15:33 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:15:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:16:40 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:16:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (nationality = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=1&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:22:00 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (education = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:22:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE ((((interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)) AND (education = :sl_education)) AND (gender = :sl_gender)) AND (education_branch = :sl_branch)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=2&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=1&JobForm%5Bsl_gender%5D=male&JobForm%5Bsl_branch%5D=1&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job
+---
+2014/11/13 05:23:54 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:23:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 05:28:09 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:28:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 05:56:02 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:56:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=2&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 05:58:20 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:58:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 05:58:55 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:58:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (education = :sl_education)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=2&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=1&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 05:59:33 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality).
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 05:59:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand ล้มเหลวในการดำเนินการเรียกลักษณะของ SQL: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `jobs` `t` WHERE (interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position) AND (nationality = :sl_nationality)' in C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#9 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=2&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=4&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=2&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=th&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=1&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 09:47:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_bufs.jobs_branch' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `jobs_branch`.
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 09:47:47 [error] [exception.CDbException] exception 'CDbException' with message 'ตาราง "jobs_branch" สำหรับบันทึกข้อมูลของ "JobsBranch" ไม่พบในฐานข้อมูล' in C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(JobsBranch))
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job/index')
+#11 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job%2Findex&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=3&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=3&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=2&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=2&JobForm%5Bsl_gender%5D=female&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=3&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=3&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+HTTP_REFERER=http://localhost/yii_bufs2/index.php?r=job%2Findex&JobForm%5Bsl_position%5D=&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=3&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=3&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=&JobForm%5Bsl_gender%5D=&JobForm%5Bsl_branch%5D=2&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&JobForm%5Bsl_position%5D=7&JobForm%5Bsl_nationality%5D=&JobForm%5Bsl_education%5D=2&JobForm%5Bsl_age%5D=2&JobForm%5Bsl_gender%5D=female&JobForm%5Bsl_branch%5D=&JobForm%5Bsl_language%5D=&yt0=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2
+---
+2014/11/13 09:47:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_bufs.jobs_branch' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `jobs_branch`.
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 09:47:57 [error] [exception.CDbException] exception 'CDbException' with message 'ตาราง "jobs_branch" สำหรับบันทึกข้อมูลของ "JobsBranch" ไม่พบในฐานข้อมูล' in C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(JobsBranch))
+#1 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii_bufs2\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#11 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/13 09:50:37 [error] [php] include(JobsBranch.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii_bufs2\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 09:53:25 [error] [php] include(JobsBranchCategory.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii_bufs2\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(55): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (55)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 10:30:58 [error] [php] include(JobsEducationCategory.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii_bufs2\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(57): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (57)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 10:49:46 [error] [php] include(JobsEducationDeegree.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii_bufs2\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(57): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (57)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 10:57:03 [error] [php] include(JobsEducationDeegree.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii_bufs2\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(57): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (57)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 10:57:04 [error] [php] include(JobsEducationDeegree.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii_bufs2\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(57): spl_autoload_call()
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#2 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): JobController->runAction()
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): JobController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): JobController->run()
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii_bufs2\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_bufs2/index.php?r=job
+in C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php (57)
+in C:\xampp\htdocs\yii_bufs2\index.php (13)
+2014/11/13 10:57:41 [error] [exception.CException] exception 'CException' with message 'คุณสมบัติ "JobForm.sl_degree" ยังไม่ถูกกำหนด' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(2529): CComponent->__get('sl_degree')
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(JobForm), 'sl_degree')
+#2 C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php(40): CHtml::activeDropDownList(Object(JobForm), 'sl_degree', Array, Array)
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(70): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#14 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/13 10:58:13 [error] [exception.CException] exception 'CException' with message 'คุณสมบัติ "JobForm.sl_degree" ยังไม่ถูกกำหนด' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(2529): CComponent->__get('sl_degree')
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(JobForm), 'sl_degree')
+#2 C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php(40): CHtml::activeDropDownList(Object(JobForm), 'sl_degree', Array, Array)
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(70): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#14 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/13 10:59:16 [error] [exception.CException] exception 'CException' with message 'คุณสมบัติ "JobForm.sl_degree" ยังไม่ถูกกำหนด' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(2529): CComponent->__get('sl_degree')
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(JobForm), 'sl_degree')
+#2 C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php(40): CHtml::activeDropDownList(Object(JobForm), 'sl_degree', Array, Array)
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(70): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#14 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/13 10:59:46 [error] [exception.CException] exception 'CException' with message 'คุณสมบัติ "JobForm.sl_degree" ยังไม่ถูกกำหนด' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(2529): CComponent->__get('sl_degree')
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(JobForm), 'sl_degree')
+#2 C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php(40): CHtml::activeDropDownList(Object(JobForm), 'sl_degree', Array, Array)
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(70): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#14 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/13 11:01:33 [error] [exception.CException] exception 'CException' with message 'คุณสมบัติ "JobForm.sl_degree" ยังไม่ถูกกำหนด' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(2529): CComponent->__get('sl_degree')
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(JobForm), 'sl_degree')
+#2 C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php(40): CHtml::activeDropDownList(Object(JobForm), 'sl_degree', Array, Array)
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(70): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#14 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---
+2014/11/13 11:02:26 [error] [exception.CException] exception 'CException' with message 'คุณสมบัติ "JobForm.sl_degree" ยังไม่ถูกกำหนด' in C:\xampp\htdocs\yii_bufs2\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(2529): CComponent->__get('sl_degree')
+#1 C:\xampp\htdocs\yii_bufs2\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(JobForm), 'sl_degree')
+#2 C:\xampp\htdocs\yii_bufs2\protected\views\job\index.php(40): CHtml::activeDropDownList(Object(JobForm), 'sl_degree', Array, Array)
+#3 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii_bufs2\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\yii_bufs2\protected\controllers\JobController.php(70): CController->render('index', Array)
+#8 C:\xampp\htdocs\yii_bufs2\framework\web\actions\CInlineAction.php(49): JobController->actionIndex()
+#9 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii_bufs2\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii_bufs2\framework\web\CWebApplication.php(141): CWebApplication->runController('job')
+#14 C:\xampp\htdocs\yii_bufs2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii_bufs2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_bufs2/index.php?r=job
+---

@@ -1,22 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "jobs_position".
+ * This is the model class for table "jobs_education_category".
  *
- * The followings are the available columns in table 'jobs_position':
+ * The followings are the available columns in table 'jobs_education_category':
  * @property integer $id
- * @property string $position_en_name
- * @property string $position_th_name
- * @property string $position_kr_name
+ * @property string $branch_en_name
+ * @property string $branch_th_name
+ * @property string $branch_kr_name
  */
-class JobsPosition extends CActiveRecord
+class JobsEducationCategory extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'jobs_position';
+		return 'jobs_education_category';
 	}
 
 	/**
@@ -27,10 +27,10 @@ class JobsPosition extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('position_en_name, position_th_name, position_kr_name', 'length', 'max'=>255),
+			array('branch_en_name, branch_th_name, branch_kr_name', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, position_en_name, position_th_name, position_kr_name', 'safe', 'on'=>'search'),
+			array('id, branch_en_name, branch_th_name, branch_kr_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,9 +52,9 @@ class JobsPosition extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'position_en_name' => 'Position En Name',
-			'position_th_name' => 'Position Th Name',
-			'position_kr_name' => 'Position Kr Name',
+			'branch_en_name' => 'Branch En Name',
+			'branch_th_name' => 'Branch Th Name',
+			'branch_kr_name' => 'Branch Kr Name',
 		);
 	}
 
@@ -77,9 +77,9 @@ class JobsPosition extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('position_en_name',$this->position_en_name,true);
-		$criteria->compare('position_th_name',$this->position_th_name,true);
-		$criteria->compare('position_kr_name',$this->position_kr_name,true);
+		$criteria->compare('branch_en_name',$this->branch_en_name,true);
+		$criteria->compare('branch_th_name',$this->branch_th_name,true);
+		$criteria->compare('branch_kr_name',$this->branch_kr_name,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -90,7 +90,7 @@ class JobsPosition extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return JobsPosition the static model class
+	 * @return JobsEducationCategory the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
