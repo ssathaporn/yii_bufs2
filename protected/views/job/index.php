@@ -63,6 +63,26 @@
         </div>
 
         <?php foreach ($results as $result): ?>
+            <?php
+            $interest_position = "";
+            if ($result->interest_position1 != '') {
+                $interest_position .= $result->interest_position1;
+            }
+            if ($result->interest_position2 != '') {
+                $interest_position .= ", " . $result->interest_position2;
+            }
+            if ($result->interest_position3 != '') {
+                $interest_position .= ", " . $result->interest_position2;
+            }
+
+            $language = "";
+            if ($result->language1 != '') {
+                $language .= $result->lang1->language_th_name;
+            }
+            if ($result->language2 != '') {
+                $language .= ', ' . $result->lang2->language_th_name;
+            }
+            ?>
             <div class="jobResult-wrap">
                 <div class="jobResult-image">
                     <?php if ($result->gender == 'male'): ?>
@@ -73,18 +93,19 @@
                 </div>
                 <div class="jobResult-description">
                     <p class="title-position">
-                        ตำแหน่งงานที่สนใจ : <?php echo $result->interest1->position_th_name . ", " . $result->interest2->position_th_name . ", " . $result->interest3->position_th_name ?>
+                        ตำแหน่งงานที่สนใจ : <?php echo $interest_position; ?>
                     </p>
-                    <div class=''>
-                        <ul>
-                            <li>สัญชาติ : <?php echo Jobs::getThaiNation($result->nationality); ?></li>
-                            <li>อายุ : <?php echo $result->age . " ปี" ?></li>
-                        </ul>
-                        <ul>
-                            <li>วุฒิการศึกษา : <?php echo $result->education1->education_th_name ?></li>
-                            <li>สาขา : <?php echo $result->branch1->branch_th_name ?></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>สัญชาติ : <?php echo $result->nation->nation_th_name; ?></li>
+                        <li>อายุ : <?php echo $result->age . " ปี" ?></li>                            
+                    </ul>
+                    <ul>
+                        <li>วุฒิการศึกษา : <?php echo $result->edu->degree_th_name ?></li>
+                        <li>สาขา : <?php echo $result->edu_cate->category_th_name ?></li>
+                    </ul>
+                    <ul class="language">
+                        <li>ความสามารถด้านภาษา : <?php echo $language; ?></li>
+                    </ul>
                 </div>
             </div>
         <?php endforeach; ?>
@@ -98,5 +119,6 @@
             ));
             ?>
         </div>
+
     </div>
 </div>

@@ -1,68 +1,33 @@
 <?php
-
-/**
- * This is the model class for table "jobs".
- *
- * The followings are the available columns in table 'jobs':
- * @property integer $id
- * @property string $local_fname
- * @property string $local_lname
- * @property string $en_fname
- * @property string $en_lname
- * @property integer $age
- * @property string $gender
- * @property integer $nationality
- * @property string $interest_position1
- * @property string $interest_position2
- * @property string $interest_position3
- * @property integer $education
- * @property integer $education_category
- * @property integer $language1
- * @property integer $language2
- * @property integer $image
- * @property string $created_date
- */
 class Jobs extends CActiveRecord {
     
     public $n;
 
-    /**
-     * @return string the associated database table name
-     */
     public function tableName() {
         return 'jobs';
     }
 
-    /**
-     * @return array validation rules for model attributes.
-     */
     public function rules() {
-        // NOTE: you should only define rules for those attributes that
-        // will receive user inputs.
         return array(
-            array('age, nationality, education, education_category, language1, language2, image', 'numerical', 'integerOnly' => true),
+            array('age, nationality, position_category, education, education_category, language1, language2, image', 'numerical', 'integerOnly' => true),
             array('local_fname, local_lname, en_fname, en_lname, interest_position1, interest_position2, interest_position3', 'length', 'max' => 255),
             array('gender', 'length', 'max' => 6),
             array('created_date', 'safe'),
-            // The following rule is used by search().
-            // @todo Please remove those attributes that should not be searched.
-            array('id, local_fname, local_lname, en_fname, en_lname, age, gender, nationality, interest_position1, interest_position2, interest_position3, education, education_category, language1, language2, image, created_date', 'safe', 'on' => 'search'),
+            array('id, local_fname, local_lname, en_fname, en_lname, age, gender, nationality, interest_position1, interest_position2, interest_position3, position_category, education, education_category, language1, language2, image, created_date', 'safe', 'on' => 'search'),
         );
     }
 
-    /**
-     * @return array relational rules.
-     */
     public function relations() {
-        // NOTE: you may need to adjust the relation name and the related
-        // class name for the relations automatically generated below.
         return array(
+            'nation' => array(self::BELONGS_TO, 'JobsNationality', 'nationality'),
+            'edu' => array(self::BELONGS_TO, 'JobsEducationDegree', 'education'),
+            'edu_cate' => array(self::BELONGS_TO, 'JobsEducationCategory', 'education_category'),
+            'lang1' => array(self::BELONGS_TO, 'JobsLanguage', 'language1'),
+            'lang2' => array(self::BELONGS_TO, 'JobsLanguage', 'language2'),
+            'posi' => array(self::BELONGS_TO, 'JobsPosition', 'position_category'),
         );
     }
 
-    /**
-     * @return array customized attribute labels (name=>label)
-     */
     public function attributeLabels() {
         return array(
             'id' => 'ID',
@@ -76,6 +41,7 @@ class Jobs extends CActiveRecord {
             'interest_position1' => 'Interest Position1',
             'interest_position2' => 'Interest Position2',
             'interest_position3' => 'Interest Position3',
+            'position_category' => 'Position Category',
             'education' => 'Education',
             'education_category' => 'Education Category',
             'language1' => 'Language1',
@@ -85,21 +51,7 @@ class Jobs extends CActiveRecord {
         );
     }
 
-    /**
-     * Retrieves a list of models based on the current search/filter conditions.
-     *
-     * Typical usecase:
-     * - Initialize the model fields with values from filter form.
-     * - Execute this method to get CActiveDataProvider instance which will filter
-     * models according to data in model fields.
-     * - Pass data provider to CGridView, CListView or any similar widget.
-     *
-     * @return CActiveDataProvider the data provider that can return the models
-     * based on the search/filter conditions.
-     */
     public function search() {
-        // @todo Please modify the following code to remove attributes that should not be searched.
-
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id);
@@ -113,6 +65,7 @@ class Jobs extends CActiveRecord {
         $criteria->compare('interest_position1', $this->interest_position1, true);
         $criteria->compare('interest_position2', $this->interest_position2, true);
         $criteria->compare('interest_position3', $this->interest_position3, true);
+        $criteria->compare('position_category', $this->position_category);
         $criteria->compare('education', $this->education);
         $criteria->compare('education_category', $this->education_category);
         $criteria->compare('language1', $this->language1);
@@ -125,12 +78,6 @@ class Jobs extends CActiveRecord {
         ));
     }
 
-    /**
-     * Returns the static model of the specified AR class.
-     * Please note that you should have this exact method in all your CActiveRecord descendants!
-     * @param string $className active record class name.
-     * @return Jobs the static model class
-     */
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }

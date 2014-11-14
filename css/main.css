@@ -289,11 +289,16 @@ ul.courseList{
 .jobResult-wrap .jobResult-description .title-position{
     color: #0034FF;
     font-weight: 700;
+    text-align: initial;
 }
 .jobResult-wrap .jobResult-description ul{
     margin: 0;
     float: left;
     width: 190px;
+}
+.jobResult-wrap .jobResult-description ul.language{
+    width: 100%;
+    color: #F00;
 }
 
 /*-----------------------------------------*/

@@ -9,17 +9,20 @@ class JobController extends Controller {
         /**         * ************************
          * Criteria
          * ************************ */
-        //$criteria = new CDbCriteria();
+        $criteria = new CDbCriteria();
 
         if (isset($_GET['JobForm'])) {
             if ($_GET['JobForm']['sl_position'] != '') {
-                $criteria->addCondition('interest_job1 = :sl_position OR interest_job2 = :sl_position OR interest_job3 = :sl_position', 'AND')->params[':sl_position'] = $_GET['JobForm']['sl_position'];
+                $criteria->addCondition('education = :sl_position', 'AND')->params[':sl_position'] = $_GET['JobForm']['sl_position'];
             }
             if ($_GET['JobForm']['sl_nationality'] != '') {
                 $criteria->addCondition('nationality = :sl_nationality', 'AND')->params[':sl_nationality'] = $_GET['JobForm']['sl_nationality'];
             }
-            if ($_GET['JobForm']['sl_education'] != '') {
-                $criteria->addCondition('education = :sl_education', 'AND')->params[':sl_education'] = $_GET['JobForm']['sl_education'];
+            if ($_GET['JobForm']['sl_degree'] != '') {
+                $criteria->addCondition('education = :sl_degree', 'AND')->params[':sl_degree'] = $_GET['JobForm']['sl_degree'];
+            }
+            if ($_GET['JobForm']['sl_category'] != '') {
+                $criteria->addCondition('education_category = :sl_category', 'AND')->params[':sl_category'] = $_GET['JobForm']['sl_category'];
             }
             if ($_GET['JobForm']['sl_age'] != '') {
                 if ($_GET['JobForm']['sl_age'] == 1) {
@@ -34,20 +37,17 @@ class JobController extends Controller {
             }
             if ($_GET['JobForm']['sl_gender'] != '') {
                 $criteria->addCondition('gender = :sl_gender', 'AND')->params[':sl_gender'] = $_GET['JobForm']['sl_gender'];
-            }
-            if ($_GET['JobForm']['sl_branch'] != '') {
-                $criteria->addCondition('education_branch = :sl_branch', 'AND')->params[':sl_branch'] = $_GET['JobForm']['sl_branch'];
-            }
+            }     
             if ($_GET['JobForm']['sl_language'] != '') {
-                
+                $criteria->addCondition('language1 = :sl_language OR language2 = :sl_language', 'AND')->params[':sl_language'] = $_GET['JobForm']['sl_language'];
             }
         }
-        /*
-          $count = Jobs::model()->count($criteria);
-          $pages = new CPagination($count);
-          $pages->pageSize = 10; // item per page
-          $pages->applyLimit($criteria);
-          $results = Jobs::model()->findAll($criteria); */
+
+        $count = Jobs::model()->count($criteria);
+        $pages = new CPagination($count);
+        $pages->pageSize = 10; // item per page
+        $pages->applyLimit($criteria);
+        $results = Jobs::model()->findAll($criteria);
 
 
         /*         * *************************
@@ -67,6 +67,8 @@ class JobController extends Controller {
             'position' => $position,
             'language' => $language,
             'nationality' => $nationality,
+            'pages' => $pages,
+            'results' => $results,
         ));
     }
 
@@ -76,23 +78,28 @@ class JobController extends Controller {
 
     public function actionInsertjobs() {
         $model = new Jobs();
-        for ($i = 1; $i <= 100; $i++) {
-            $nationality = array('th', 'kr');
-            $genders = array('male', 'female');
 
+        $genders = array('male', 'female');
+        $rawPosition = "Suparvisor,เลขานุการ,ประชาสัมพันธ์,ทนายความ,นิติกร,Legal Officer,การเงิน,วิเคราะห์การเงิน,การตลาด,การขาย,จัดซื้อ,คีย์ข้อมูล,เจ้าหน้าที่งานธุรการ,เจ้าหน้าที่ Q.C,call center,Web Programming,Web Design,Graphic Design,ติดต่อต่างประเทศ,พนักงานต้อนรับ,มัคคุเทศก์";
+        $positions = explode(',', $rawPosition);
+
+        for ($i = 1; $i <= 100; $i++) {
             $model = new Jobs();
             $model->local_fname = 'จิรายุ_' . $i;
             $model->local_lname = 'คุ้มกายใจ_' . $i;
             $model->en_fname = 'FNAME_' . $i;
             $model->en_lname = 'LNAME_' . $i;
             $model->age = rand(18, 50);
-            $model->nationality = $nationality[array_rand($nationality)];
+            $model->nationality = rand(1, 2);
             $model->gender = $genders[array_rand($genders)];
-            $model->interest_job1 = rand(1, 7);
-            $model->interest_job2 = rand(1, 7);
-            $model->interest_job3 = rand(1, 7);
-            $model->education = rand(1, 3);
-            $model->education_branch = rand(1, 4);
+            $model->interest_position1 = $positions[rand(0, 20)];
+            $model->interest_position2 = $positions[rand(0, 20)];
+            $model->interest_position3 = $positions[rand(0, 20)];
+            $model->position_category = rand(1, 9);
+            $model->education = rand(1, 4);
+            $model->education_category = rand(1, 8);
+            $model->language1 = rand(1, 3);
+            $model->language2 = rand(1, 3);
             $model->image = rand(1, 4);
             $model->created_date = new CDbExpression('NOW()');
             $model->save();
