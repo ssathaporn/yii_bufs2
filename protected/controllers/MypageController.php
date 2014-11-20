@@ -9,7 +9,27 @@ class MypageController extends Controller {
     }
 
     public function actionLogin() {
-        $this->render('login');
+        $model = new LoginForm();
+
+        if (isset($_POST['LoginForm'])) {
+            $model->attributes($_POST['LoginForm']);
+
+            if ($model->validate()) {
+                $username = $_POST['LoginForm']['username'];
+                $password = $_POST['LoginForm']['password'];
+                $user = Users::model()->find(array(
+                    'condition' => 'username = :u AND password = :u',
+                    'params' => array(
+                        'u' => $username,
+                        'p' => $password
+                    )
+                ));
+            }
+        }
+
+        $this->render('login', array(
+            'model' => $model
+        ));
     }
 
     public function actionRegister() {
@@ -28,7 +48,7 @@ class MypageController extends Controller {
             $model->email = $_POST['Users']['email'];
             $model->telephone = $_POST['Users']['telephone'];
             $model->register_date = date("Y-m-d H:i:s");
-            if($model->save()){
+            if ($model->save()) {
                 Yii::app()->user->setFlash('success', 'สมัครสมาชิกสำเร็จ !!');
                 $this->redirect('index.php?r=mypage/register');
             }
