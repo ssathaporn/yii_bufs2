@@ -13,7 +13,7 @@ class JobController extends Controller {
 
         if (isset($_GET['JobForm'])) {
             if ($_GET['JobForm']['sl_position'] != '') {
-                $criteria->addCondition('education = :sl_position', 'AND')->params[':sl_position'] = $_GET['JobForm']['sl_position'];
+                $criteria->addCondition('position_category = :sl_position', 'AND')->params[':sl_position'] = $_GET['JobForm']['sl_position'];
             }
             if ($_GET['JobForm']['sl_nationality'] != '') {
                 $criteria->addCondition('nationality = :sl_nationality', 'AND')->params[':sl_nationality'] = $_GET['JobForm']['sl_nationality'];

@@ -68,12 +68,6 @@
             if ($result->interest_position1 != '') {
                 $interest_position .= $result->interest_position1;
             }
-            if ($result->interest_position2 != '') {
-                $interest_position .= ", " . $result->interest_position2;
-            }
-            if ($result->interest_position3 != '') {
-                $interest_position .= ", " . $result->interest_position2;
-            }
 
             $language = "";
             if ($result->language1 != '') {
@@ -93,7 +87,7 @@
                 </div>
                 <div class="jobResult-description">
                     <p class="title-position">
-                        ตำแหน่งงานที่สนใจ : <?php echo $interest_position; ?>
+                        ตำแหน่งงานที่สนใจ : <?php echo $interest_position." / ".$result->posi->position_th_name; ?>
                     </p>
                     <ul>
                         <li>สัญชาติ : <?php echo $result->nation->nation_th_name; ?></li>

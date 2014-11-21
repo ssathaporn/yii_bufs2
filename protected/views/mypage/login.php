@@ -24,6 +24,10 @@ echo "</pre>";
                 <?php
                 $form = $this->beginWidget('CActiveForm', array(
                     'id' => 'login-form',
+                    'enableClientValidation' => true,
+                    'clientOptions' => array(
+                        'validateOnSubmit' => true,
+                    ),
                     'errorMessageCssClass' => 'txt_red'
                 ));
                 ?>
